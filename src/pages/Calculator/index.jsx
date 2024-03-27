@@ -13,7 +13,7 @@ const Calculator = () => {
       const result = eval(display);
       setDisplay(result.toString());
     } catch (e) {
-      setDisplay("please enter only numbers");
+      setDisplay("please enter a valid operation");
     }
   };
   return (
