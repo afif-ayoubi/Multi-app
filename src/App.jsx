@@ -3,7 +3,7 @@ import "./styles/utilities.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Calculator from "./pages/Calculator";
-import Notes from "./pages/Notes";
+import MainNotes from "./pages/MainNotes";
 import Weather from "./pages/Weather";
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Calculator />} />
-          <Route path="/notes" element={<Notes />} />
+          <Route path="/" element={<MainNotes />} />
+          <Route path="/notes" element={<Calculator />} />
           <Route path="/weather" element={<Weather />} />
         </Routes>
       </BrowserRouter>
