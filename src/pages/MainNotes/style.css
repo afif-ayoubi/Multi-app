@@ -7,7 +7,7 @@ body {
 .main {
   max-width: 960px;
   margin: 0px;
-  padding: 15px;
+  padding: 30px;
   min-height: 100vh;
 }
 
@@ -26,17 +26,22 @@ body {
 
 .notes {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
 }
 .note {
   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
   border-radius: 15px;
   border: 1.5px solid rgba(255, 255, 255, 0.326);
   color: #fff;
   padding: 15px;
+  min-height: 140px;
+  
+  justify-content: space-between;
+  word-wrap: break-word;
 }
 
 .note-footer {
@@ -46,6 +51,7 @@ body {
 }
 
 .note textarea {
+  white-space: pre-wrap;
   background: transparent;
   border: none;
   color: #fff;
