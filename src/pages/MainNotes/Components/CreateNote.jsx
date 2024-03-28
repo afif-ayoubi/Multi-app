@@ -13,7 +13,7 @@ const CreateNote = ({ inputText, setInputText, saveHandler }) => {
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
       ></textarea>
-      <div className="note-footer flex ">
+      <div className="note-footer flex end ">
         <span className="label">{charLimit} Left</span>
         <button className="note-save" onClick={saveHandler}>save</button>
       </div>
